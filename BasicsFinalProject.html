@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baked Rigatoni with Vodka Sauce</title>
+    <style>
+
+        body {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+      
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        
+      }
+
+      h1 {
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 50px;
+        color: #6C8F7E;
+        margin-bottom: 1%;
+      }
+      h2 {
+        text-align: center;
+text-decoration: em; 
+line-height: 20px;  
+font-size: 30px; 
+font-weight: lighter;
+margin-top: 3%;
+      }
+
+      .footer {
+        font-family:Cambria, Cochin, Georgia, Times, serif; 
+        text-align:center;
+        font-size: 18px;
+        font-weight: 100;
+      }
+
+      p {
+        line-height: 20px;
+        font-size: 18px;
+      }
+
+      button {
+       display: block;
+       margin: 0 auto;
+       margin-bottom: 20px;
+       border: 4px thin #6C8F7E;
+       border-radius: 20px;
+       background-color: #6C8F7E;
+       color: white;
+       cursor: pointer;
+       box-shadow: 0 1px 20px rgba (0, 0, 0, .5);
+       padding: 15px 10px 15px;
+       font-size: 20px;
+       font-family:Cambria, Cochin, Georgia, Times, serif; 
+      }
+
+        button:hover {
+            background-color: white;
+            color: #6C8F7E;
+            transition: all 100ms ease-in-out;
+        }
+
+        .recipes {
+            text-decoration: none;
+            color: #6C8F7E;
+        }
+.recipes:hover {
+    text-decoration: underline;
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Dee's Little Kitchn</h1>
+    <h2><em>Baked Rigatoni with Vodka Sauce</em></h2>
+    <a href="https://deeslittlekitchn.com/baked-rigatoni-with-vodka-sauce/" target="_blank">
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/128/281/original/bakedrigatoni1.jpg?1717626446"
+    alt="Baked rigatoni with vodka sauce in a pan"></a>
+    <p>
+        This <strong>Baked Rigatoni with Vodka Sauce</strong> takes a twist on the classic Baked Ziti for a delicious dish that’ll have you itching for that next Sunday Dinner so you have an excuse to make it.
+        
+        <br>
+        <br>
+            While you can never go wrong with a Baked Ziti, I wanted to create a similar dish but with a more luxurious feel — and what better way to accomplish that than by adding some homemade vodka sauce to the mix?
+</p>
+<button>
+        Want the recipe?
+    </button>
+    <hr>
+<h3>
+    Looking for more Italian recipes? Check these out:
+    </h3>
+</hr>
+    <ul>
+<li>
+    <a class="recipes" href="https://deeslittlekitchn.com/gnocchi-alla-sorrentina/" target="_blank"> Gnocchi alla Sorrentina</a>
+</li>
+<li>
+    <a class="recipes" href="https://deeslittlekitchn.com/chicken-piccata/" target="_blank"> Chicken Piccata</a>
+</li>
+<li>
+    <a class="recipes" href="https://deeslittlekitchn.com/overnight-focaccia/" target="_blank"> Overnight Focaccia</a>
+</li>
+    </ul>
+    <h3 class="footer">
+This page was coded by 
+<a class="recipes" href="https://www.linkedin.com/in/espositodanielle/" target="_blank">
+Danielle Esposito</a>
+</h3>
+<script>
+
+    function recipeButton() {
+let recipe = prompt("Do you want the recipe?");
+let email = prompt("What is your email?");
+let name = prompt("What is your name?");
+
+if (recipe === "Yes") {
+    alert(`Woohoo, ${name}! Check your inbox. 🍝`);
+} else {
+    alert(`You must have bad taste, ${name}. 😭`)
+}
+    }
+
+    let contactButton = document.querySelector("button");
+    contactButton.addEventListener("click", recipeButton)
+
+</script>
+    </body>
+  </div>
+</html>
